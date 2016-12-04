@@ -1,8 +1,5 @@
 package studaout;
 
-/**
- * Created by timout on 11/10/16.
- */
 public class Pair<A,B> {
     public final A first;
     public final B second;
@@ -14,5 +11,10 @@ public class Pair<A,B> {
 
     public static <A,B> Pair<A,B> create( A first, B second) {
         return new Pair<>(first, second);
+    }
+
+    @Override
+    public String toString() {
+        return "Pair{first=" + first + ", second=" + second + '}';
     }
 }

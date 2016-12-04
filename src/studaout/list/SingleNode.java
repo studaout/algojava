@@ -3,9 +3,6 @@ package studaout.list;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by timout on 12/27/14.
- */
 public class SingleNode<T> {
     
     public final T key;
