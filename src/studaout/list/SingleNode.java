@@ -21,6 +21,14 @@ public class SingleNode<T> {
         return root;
     }
 
+    public static <T> SingleNode<T> create(T... a) {
+        SingleNode<T> root = null;
+        for ( int i = a.length-1; i >=0; --i) {
+            root = new SingleNode<>(a[i], root);
+        }
+        return root;
+    }
+
     public SingleNode(T key) {
         this.key = key;
     }
@@ -36,6 +44,14 @@ public class SingleNode<T> {
 
     public SingleNode<T> getNext() {
         return next;
+    }
+
+    public boolean hasNext() {
+        return next != null;
+    }
+
+    public boolean hasNotNext() {
+        return next == null;
     }
 
     public SingleNode<T> toLast() {
