@@ -16,8 +16,11 @@ public class ThreeSum {
 
     public static List<List<Integer>> find(int [] arr) { //does not solve duplicates
         List<List<Integer>> res = new LinkedList<>();
+        HashMap<Integer, Integer> firstHead = new HashMap<>();
         for ( int i = 0; i < arr.length-2; ++i) {
             int s = arr[i];
+            if ( firstHead.containsKey(s) ) continue;
+            firstHead.put(s, -1);
             int target = -s;
             HashMap<Integer, Integer> h = new HashMap<>();
             for ( int j = i+1; j < arr.length; ++j ) {
