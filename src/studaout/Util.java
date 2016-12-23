@@ -3,9 +3,6 @@ package studaout;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by timout on 1/28/15.
- */
 public class Util {
 
     public static long min(long... l) {

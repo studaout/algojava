@@ -5,9 +5,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * Created by timout on 12/8/14.
- */
 public class ComparatorTest {
 
     public static void main(String[] args) {

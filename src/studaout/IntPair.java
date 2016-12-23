@@ -1,8 +1,5 @@
 package studaout;
 
-/**
- * Created by timout on 2/10/15.
- */
 public class IntPair {
     public final Integer first;
     public final Integer second;
