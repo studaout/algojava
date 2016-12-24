@@ -1,8 +1,5 @@
 package studaout.bit;
 
-/**
- * Created by timout on 12/19/14.
- */
 public class BitUtil {
 
     public static int countBits(long i) {
